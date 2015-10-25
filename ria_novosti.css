@@ -1,0 +1,118 @@
+.container{
+  width: 320px;
+  height: 402px;
+  border: 1px solid rgb(164,164,164);
+}
+.header {
+  height: 28px;
+  background: rgb(0,168,236);
+  padding: 0 10px;
+  position: relative;
+}   
+span{
+  color:white;
+  font-weight: bolder;
+  font-size: 12px;
+  line-height: 28px;
+  font-family: helvetica;
+}
+.trapezia{
+  position:absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  width: 35px;
+  border-left: 8px solid transparent;
+  border-bottom: 28px solid white;
+}
+.trapezia:before {
+  content: "";
+  position: absolute;
+  background: rgb(64,189,240);
+  height: 22px;
+  width: 22px;
+  top: 3px;
+  border-radius: 50%; 
+  right: 6px;
+}
+.trapezia:after{
+  content:'';
+  position:absolute;
+  top:11px;
+  right:9px;
+  border-top: 8px solid white;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.trapezia_bottom{
+  position:relative;
+  top:1px;
+  float: right;
+  width: 35px;
+  border-left: 8px solid transparent;
+  border-bottom: 28px solid white;
+}
+.trapezia_bottom:before {
+  content: "";
+  position: absolute;
+  background: rgb(64,189,240);
+  height: 22px;
+  width: 22px;
+  top: 3px;
+  border-radius: 50%; 
+  right: 6px;
+}
+.trapezia_bottom:after{
+  content:'';
+  position:absolute;
+  top:9px;
+  right:9px;
+  border-bottom: 8px solid white;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
+.news{
+  padding: 6px 10px 8px;
+  height:51px;
+  position:relative;
+}
+.text{
+  color:rgb(0,168,236);
+  font-family: helvetica;
+  font-size:10px;
+  font-weight: bolder;
+  padding: 0 ;
+  line-height:10px;
+}
+.date{
+  color: rgb(94,94,94);
+  font-family: helvetica;
+  font-size:10px;
+   font-weight: bolder;
+  padding: 0px;
+  line-height:10px;
+}
+.news:hover:before{
+  content:"";
+  position: absolute;
+  left: 0;
+  transform: translateY(-50%) translateX(-100%);
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid lightblue;
+  border-bottom: 8px solid transparent;
+}
+.news:hover{
+  background:lightblue;
+}
+img{
+  height: 40px;
+  display: inline-block;
+  float: right;
+}
+p{
+  width: 206px;
+  margin: 0;
+}
